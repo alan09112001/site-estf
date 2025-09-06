@@ -27,10 +27,26 @@ header .logo {
   gap: 15px;               /* espace entre les images et le texte */
   font-size: 2rem;         /* taille du texte */
   color: #FFFFFF;          /* couleur verte du club */
+  .header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2rem;
+  color: #FFFFFF;
+
+  flex-wrap: nowrap;  /* empêche les logos de passer en dessous */
 }
 
 .header-title .logo {
-  width: 60px;   /* largeur du logo */
+  width: 50px;   /* taille adaptée pour mobile */
+  height: auto;
+}
+
+}
+
+.header-title .logo {
+  width: 50px;   /* largeur du logo */
   height: auto;  /* hauteur proportionnelle */
 }
 
