@@ -20,6 +20,20 @@ header .logo {
   display: block;
   margin: 0 auto 10px;
 }
+.header-title {
+  display: flex;           /* affiche le texte et les images sur la même ligne */
+  align-items: center;     /* centre verticalement les logos et le texte */
+  justify-content: center; /* centre horizontalement le tout */
+  gap: 15px;               /* espace entre les images et le texte */
+  font-size: 2rem;         /* taille du texte */
+  color: #FFFFFF;          /* couleur verte du club */
+}
+
+.header-title .logo {
+  width: 60px;   /* largeur du logo */
+  height: auto;  /* hauteur proportionnelle */
+}
+
 
 h1 {
   font-size: 2rem;
