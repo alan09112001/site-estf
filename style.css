@@ -27,13 +27,6 @@ header .logo {
   gap: 15px;               /* espace entre les images et le texte */
   font-size: 2rem;         /* taille du texte */
   color: #FFFFFF;          /* couleur verte du club */
-  .header-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  font-size: 2rem;
-  color: #FFFFFF;
 
   flex-wrap: nowrap;  /* empêche les logos de passer en dessous */
 }
