@@ -1,5 +1,9 @@
 /* Reset basique */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
 
 body {
   font-family: 'Arial', sans-serif;
@@ -8,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* En-tête */
 header {
   background: #006747;
   color: #FFFFFF;
@@ -15,39 +20,22 @@ header {
   padding: 20px 10px;
 }
 
-header .logo {
-  max-width: 100px;
-  display: block;
-  margin: 0 auto 10px;
-}
 .header-title {
-  display: flex;           /* affiche le texte et les images sur la même ligne */
-  align-items: center;     /* centre verticalement les logos et le texte */
-  justify-content: center; /* centre horizontalement le tout */
-  gap: 15px;               /* espace entre les images et le texte */
-  font-size: 2rem;         /* taille du texte */
-  color: #FFFFFF;          /* couleur verte du club */
-
-  flex-wrap: nowrap;  /* empêche les logos de passer en dessous */
+  display: flex;           /* texte et logos sur la même ligne */
+  align-items: center;     /* centre verticalement */
+  justify-content: center; /* centre horizontalement */
+  gap: 15px;               /* espace entre logos et texte */
+  font-size: 2rem;         
+  color: #FFFFFF;
+  flex-wrap: nowrap;       /* empêche le wrapping */
 }
 
 .header-title .logo {
-  width: 50px;   /* taille adaptée pour mobile */
-  height: auto;
+  width: 50px;   /* largeur adaptée */
+  height: auto;  /* proportionnel */
 }
 
-}
-
-.header-title .logo {
-  width: 50px;   /* largeur du logo */
-  height: auto;  /* hauteur proportionnelle */
-}
-
-
-h1 {
-  font-size: 2rem;
-}
-
+/* Main */
 main {
   padding: 30px 10px;
   max-width: 800px;
@@ -61,6 +49,7 @@ main {
   font-size: 1.8rem;
 }
 
+/* Tableau */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -82,6 +71,7 @@ tr:nth-child(even) {
   background-color: #f0f2f5;
 }
 
+/* Footer */
 footer {
   background: #006747;
   color: #FFFFFF;
@@ -93,6 +83,16 @@ footer {
 
 /* Responsive */
 @media(max-width: 600px){
-  h1 { font-size: 1.5rem; }
-  .classement h2 { font-size: 1.3rem; }
+  .header-title {
+    font-size: 1.5rem; /* réduit le texte sur petit écran */
+    gap: 10px;         /* réduit l’espace entre logos et texte */
+  }
+
+  .header-title .logo {
+    width: 40px;       /* réduit la taille des logos sur mobile */
+  }
+
+  .classement h2 {
+    font-size: 1.3rem;
+  }
 }
