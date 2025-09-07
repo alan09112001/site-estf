@@ -46,7 +46,7 @@ main {
 .classement-page {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centre verticalement */
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   position: relative;
