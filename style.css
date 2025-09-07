@@ -40,33 +40,35 @@ header {
 /* Main */
 main {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 10px;
 }
 
 /* Classement pages */
 .classement-page {
-  position: relative;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
   align-items: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 20px 10px;
 }
+
 .back-top-left {
   position: absolute;
   top: 20px;
   left: 20px;
 }
+
 .classement-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 100%;
+  max-width: 800px;
 }
 
-/* Section Home centrée et espacée uniformément */
+/* Section Home */
 .home {
   display: flex;
   flex-direction: column;
@@ -157,9 +159,5 @@ footer {
   }
   .cover-image {
     height: 150px;
-  }
-  .home {
-    height: auto;
-    justify-content: center;
   }
 }
