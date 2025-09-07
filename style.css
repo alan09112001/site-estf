@@ -4,11 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
   height: 100%;
 }
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #FFFFFF;
@@ -25,7 +23,6 @@ header {
   text-align: center;
   padding: 20px 10px;
 }
-
 .header-title {
   display: flex;
   align-items: center;
@@ -35,7 +32,6 @@ header {
   color: #FFFFFF;
   flex-wrap: nowrap;
 }
-
 .header-title .logo {
   width: 50px;
   height: auto;
@@ -43,11 +39,31 @@ header {
 
 /* Main */
 main {
-  flex: 1; /* Prend tout l'espace disponible */
+  flex: 1;
   display: flex;
-  justify-content: center; /* centre horizontalement */
-  align-items: center;     /* centre verticalement si .home < 100% */
+  justify-content: center;
+  align-items: center;
   padding: 30px 10px;
+}
+
+/* Classement pages */
+.classement-page {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.classement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Section Home centrée et espacée uniformément */
@@ -55,10 +71,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; /* espace uniforme entre texte, image et boutons */
+  justify-content: space-evenly;
   text-align: center;
-  height: 80vh; /* prend 80% de la hauteur visible */
-  gap: 20px; /* petit écart minimum */
+  height: 80vh;
+  gap: 20px;
 }
 
 /* Image de couverture */
@@ -84,18 +100,15 @@ table {
   border-collapse: collapse;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
-
 th, td {
   border: 1px solid #006747;
   padding: 12px;
   text-align: center;
 }
-
 th {
   background-color: #006747;
   color: #FFFFFF;
 }
-
 tr:nth-child(even) {
   background-color: #f0f2f5;
 }
@@ -107,7 +120,6 @@ tr:nth-child(even) {
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .btn {
   display: inline-block;
   background: #006747;
@@ -118,14 +130,8 @@ tr:nth-child(even) {
   font-size: 1rem;
   transition: background 0.3s ease;
 }
-
 .btn:hover {
   background: #004d34;
-}
-
-.back-home {
-  margin-top: 20px;
-  text-align: center;
 }
 
 /* Footer */
@@ -153,7 +159,7 @@ footer {
     height: 150px;
   }
   .home {
-    height: auto; /* pour mobile, on laisse le contenu s'adapter */
+    height: auto;
     justify-content: center;
   }
 }
