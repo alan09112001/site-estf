@@ -4,12 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #FFFFFF;
   color: #006747;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
+
 /* En-tête */
 header {
   background: #006747;
@@ -17,6 +25,7 @@ header {
   text-align: center;
   padding: 20px 10px;
 }
+
 .header-title {
   display: flex;
   align-items: center;
@@ -26,10 +35,12 @@ header {
   color: #FFFFFF;
   flex-wrap: nowrap;
 }
+
 .header-title .logo {
   width: 50px;
   height: auto;
 }
+
 /* Image de couverture */
 .cover-image {
   width: 100%;
@@ -40,37 +51,44 @@ header {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 /* Main */
 main {
   padding: 30px 10px;
   max-width: 800px;
   margin: 0 auto;
+  flex: 1; /* Permet au main de prendre tout l'espace disponible */
 }
-.classement h2,
-.home h2 {
+
+.classement h2, .home h2 {
   text-align: center;
   color: #000000;
   margin-bottom: 20px;
   font-size: 1.8rem;
 }
+
 /* Tableau */
 table {
   width: 100%;
   border-collapse: collapse;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
+
 th, td {
   border: 1px solid #006747;
   padding: 12px;
   text-align: center;
 }
+
 th {
   background-color: #006747;
   color: #FFFFFF;
 }
+
 tr:nth-child(even) {
   background-color: #f0f2f5;
 }
+
 /* Boutons */
 .button-container {
   display: flex;
@@ -79,6 +97,7 @@ tr:nth-child(even) {
   gap: 20px;
   margin-top: 30px;
 }
+
 .btn {
   display: inline-block;
   background: #006747;
@@ -89,22 +108,25 @@ tr:nth-child(even) {
   font-size: 1rem;
   transition: background 0.3s ease;
 }
+
 .btn:hover {
   background: #004d34;
 }
+
 .back-home {
   margin-top: 20px;
   text-align: center;
 }
+
 /* Footer */
 footer {
   background: #006747;
   color: #FFFFFF;
   text-align: center;
   padding: 15px 10px;
-  margin-top: 30px;
   font-size: 0.9rem;
 }
+
 /* Responsive */
 @media(max-width: 600px){
   .header-title {
@@ -114,8 +136,7 @@ footer {
   .header-title .logo {
     width: 40px;
   }
-  .classement h2,
-  .home h2 {
+  .classement h2, .home h2 {
     font-size: 1.3rem;
   }
   .cover-image {
