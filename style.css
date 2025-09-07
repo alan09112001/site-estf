@@ -46,7 +46,7 @@ main {
 .classement-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* centre verticalement */
   align-items: center;
   min-height: 100vh;
   position: relative;
@@ -62,10 +62,28 @@ main {
 .classement-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  /* centre le contenu horizontalement */
   gap: 20px;
   width: 100%;
-  max-width: 800px;
+  max-width: 800px;    /* largeur uniforme pour toutes les pages */
+}
+
+.classement-content table {
+  width: 100%; /* tableau prend toute la largeur du conteneur */
+  border-collapse: collapse;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+th, td {
+  border: 1px solid #006747;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #006747;
+  color: #FFFFFF;
+}
+tr:nth-child(even) {
+  background-color: #f0f2f5;
 }
 
 /* Section Home */
@@ -88,31 +106,6 @@ main {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-}
-
-/* Classement */
-.classement h2, .home h2 {
-  color: #000000;
-  font-size: 1.8rem;
-}
-
-/* Tableau */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-th, td {
-  border: 1px solid #006747;
-  padding: 12px;
-  text-align: center;
-}
-th {
-  background-color: #006747;
-  color: #FFFFFF;
-}
-tr:nth-child(even) {
-  background-color: #f0f2f5;
 }
 
 /* Boutons */
