@@ -45,18 +45,20 @@ header {
 main {
   flex: 1; /* Prend tout l'espace disponible */
   display: flex;
-  justify-content: center;
-  align-items: center; /* Centre verticalement */
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement si .home < 100% */
   padding: 30px 10px;
 }
 
-/* Section Home centrée */
+/* Section Home centrée et espacée uniformément */
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly; /* espace uniforme entre texte, image et boutons */
   text-align: center;
-  gap: 20px; /* Espacement entre texte, image et boutons */
+  height: 80vh; /* prend 80% de la hauteur visible */
+  gap: 20px; /* petit écart minimum */
 }
 
 /* Image de couverture */
@@ -149,5 +151,9 @@ footer {
   }
   .cover-image {
     height: 150px;
+  }
+  .home {
+    height: auto; /* pour mobile, on laisse le contenu s'adapter */
+    justify-content: center;
   }
 }
