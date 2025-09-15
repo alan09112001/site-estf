@@ -4,9 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body {
   height: 100%;
 }
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #FFFFFF;
@@ -14,6 +16,7 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 /* En-tête */
@@ -23,6 +26,7 @@ header {
   text-align: center;
   padding: 20px 10px;
 }
+
 .header-title {
   display: flex;
   align-items: center;
@@ -32,6 +36,7 @@ header {
   color: #FFFFFF;
   flex-wrap: nowrap;
 }
+
 .header-title .logo {
   width: 50px;
   height: auto;
@@ -40,23 +45,26 @@ header {
 /* Main */
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Classement pages */
 .classement-page {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centre verticalement */
-  align-items: center;
-  min-height: 100vh;
-  position: relative;
+  align-items: center; /* centre horizontalement */
+  width: 100%;
   padding: 20px 10px;
+  padding-bottom: 100px; /* espace pour le footer */
 }
+
 .back-top-left {
   position: absolute;
   top: 20px;
   left: 20px;
 }
+
 .classement-content {
   display: flex;
   flex-direction: column;
@@ -65,23 +73,28 @@ main {
   width: 100%;
   max-width: 800px; /* largeur uniforme pour toutes les pages */
 }
+
 .classement-content h2 {
   margin-top: 70px; /* espace pour que le titre descende en dessous du bouton accueil */
 }
+
 .classement-content table {
   width: 100%; /* tableau prend toute la largeur du conteneur */
   border-collapse: collapse;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
+
 th, td {
   border: 1px solid #006747;
   padding: 12px;
   text-align: center;
 }
+
 th {
   background-color: #006747;
   color: #FFFFFF;
 }
+
 tr:nth-child(even) {
   background-color: #f0f2f5;
 }
@@ -115,6 +128,7 @@ tr:nth-child(even) {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .btn {
   display: inline-block;
   background: #006747;
@@ -125,6 +139,7 @@ tr:nth-child(even) {
   font-size: 1rem;
   transition: background 0.3s ease;
 }
+
 .btn:hover {
   background: #004d34;
 }
