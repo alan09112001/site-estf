@@ -65,6 +65,9 @@ main {
   width: 100%;
   max-width: 800px; /* largeur uniforme pour toutes les pages */
 }
+.classement-content h2 {
+  margin-top: 70px; /* espace pour que le titre descende en dessous du bouton accueil */
+}
 .classement-content table {
   width: 100%; /* tableau prend toute la largeur du conteneur */
   border-collapse: collapse;
