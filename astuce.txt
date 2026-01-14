@@ -1,3 +1,3 @@
 git add .
-git commit -m "changement photo"
+git commit -m "à jour"
 git push origin main
